@@ -1,6 +1,5 @@
 package patternPack;
 
-import java.util.Iterator;
 
 public class PatternInverse {
 
