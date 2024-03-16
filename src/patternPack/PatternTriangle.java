@@ -1,6 +1,6 @@
 package patternPack;
 
-public class PatternInverse {
+public class PatternTriangle {
 
 	public static void main(String[] args) {
 		for(int i = 0; i <= 4; i++){
