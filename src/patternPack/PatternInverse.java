@@ -1,4 +1,4 @@
-package patternPack;
+// package patternPack;
 
 
 public class PatternInverse {
@@ -10,7 +10,7 @@ public class PatternInverse {
 			
 			for (int j = i; j <= 4; j++) {
 //				System.out.print((char) (ch-1+j)+" ");
-				System.out.print(ch-1+j+" ");
+				System.out.print((char)(ch-1+j)+" ");
 			}
 			System.out.println();
 		}
