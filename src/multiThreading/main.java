@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 /*
  In this we have used the synchronized in the run().*/
  public class main implements Runnable
