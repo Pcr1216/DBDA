@@ -1,3 +1,37 @@
+/*// In this we are using join() method which is caller thread (main thread) to wait for called thread (t1 & t2) to complete
+// First with the join() it will work & it will wait for the join to complete the exection
+public class main implements Runnable{
+    public void run(){
+        synchronized(this){
+            for (int i = 0; i < 5; i++) {
+                System.out.println("Hello "+Thread.currentThread().getName());
+            }
+        }
+    }
+    public static void main(String[] args) {
+        main ob = new main();
+        main ob1 = new main();
+        Thread t1 = new Thread(ob);
+        Thread t2 = new Thread(ob1);
+        System.out.println("Hello "+Thread.currentThread().getName());
+        t1.setName("First");
+        t2.setName("Second");
+		t1.start();
+		t2.start();
+        try {
+            t1.join();
+            t2.join();
+        } catch (Exception e) {
+        }
+		System.out.println("Both the threads are over");
+
+    }
+}*/
+
+
+
+
+
 /* // In this we are using the object lock which is accessed by only one thread at a time
 // This lock comes into picture only when object has got non-static synchronized method/s or block
 public class other implements Runnable
